@@ -44,7 +44,27 @@ const Index = () => {
           <Textarea id="rental-history" placeholder="Describe your previous rental experiences..." />
         </FormControl>
 
-        {/* Employment Information */}
+        {}
+        <FormControl isRequired>
+          <FormLabel htmlFor="monthly-income" color={textColor}>
+            Monthly Income
+          </FormLabel>
+          <Input id="monthly-income" placeholder="Your monthly income" />
+        </FormControl>
+        <FormControl isRequired>
+          <FormLabel htmlFor="source-of-income" color={textColor}>
+            Source of Income
+          </FormLabel>
+          <Input id="source-of-income" placeholder="Source of your income" />
+        </FormControl>
+        <FormControl isRequired>
+          <FormLabel htmlFor="employment-length" color={textColor}>
+            Length of Current Employment
+          </FormLabel>
+          <Input id="employment-length" placeholder="Duration of your current employment" />
+        </FormControl>
+
+        {}
         <FormControl>
           <FormLabel htmlFor="employment" color={textColor}>
             Employment Information
