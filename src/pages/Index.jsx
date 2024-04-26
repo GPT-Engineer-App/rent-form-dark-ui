@@ -1,5 +1,5 @@
 // Real Estate Rental Application Form
-import { Box, Button, Container, FormControl, FormLabel, Input, VStack, Text, useColorModeValue, Heading, Textarea } from "@chakra-ui/react";
+import { Box, Button, Container, FormControl, FormLabel, Input, VStack, Text, useColorModeValue, Heading, Textarea, Image, Link } from "@chakra-ui/react";
 import { FaPaperPlane } from "react-icons/fa";
 
 const Index = () => {
@@ -33,9 +33,13 @@ const Index = () => {
           <FormLabel htmlFor="description" color={textColor}>
             Description
           </FormLabel>
-          <Text fontSize="md" color={textColor}>
+          <Image src="https://example.com/property-photo.jpg" alt="Luxurious Beachfront Property" borderRadius="md" />
+          <Text fontSize="md" color={textColor} mt="2">
             A luxurious beachfront property with 3 bedrooms and 2 bathrooms, perfect for a summer getaway.
           </Text>
+          <Link href="https://example.com/property-listing" isExternal color="blue.300">
+            View Property Listing
+          </Link>
         </FormControl>
         <Text fontSize="md" color={textColor}>
           Please fill in your details to apply for the rental.
