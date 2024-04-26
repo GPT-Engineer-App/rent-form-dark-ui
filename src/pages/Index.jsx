@@ -17,19 +17,25 @@ const Index = () => {
           <FormLabel htmlFor="property-name" color={textColor}>
             Property Name
           </FormLabel>
-          <Input id="property-name" placeholder="Property Name" />
+          <Text fontSize="md" color={textColor}>
+            Sunset Villas
+          </Text>
         </FormControl>
         <FormControl>
           <FormLabel htmlFor="location" color={textColor}>
             Location
           </FormLabel>
-          <Input id="location" placeholder="Property Location" />
+          <Text fontSize="md" color={textColor}>
+            1234 Beach Ave, Miami, FL
+          </Text>
         </FormControl>
         <FormControl>
           <FormLabel htmlFor="description" color={textColor}>
             Description
           </FormLabel>
-          <Textarea id="description" placeholder="Brief description of the property" />
+          <Text fontSize="md" color={textColor}>
+            A luxurious beachfront property with 3 bedrooms and 2 bathrooms, perfect for a summer getaway.
+          </Text>
         </FormControl>
         <Text fontSize="md" color={textColor}>
           Please fill in your details to apply for the rental.
