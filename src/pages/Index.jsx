@@ -12,6 +12,25 @@ const Index = () => {
         <Heading as="h1" size="xl" textAlign="center" color={textColor}>
           Rental Application Form
         </Heading>
+        {}
+        <FormControl>
+          <FormLabel htmlFor="property-name" color={textColor}>
+            Property Name
+          </FormLabel>
+          <Input id="property-name" placeholder="Property Name" />
+        </FormControl>
+        <FormControl>
+          <FormLabel htmlFor="location" color={textColor}>
+            Location
+          </FormLabel>
+          <Input id="location" placeholder="Property Location" />
+        </FormControl>
+        <FormControl>
+          <FormLabel htmlFor="description" color={textColor}>
+            Description
+          </FormLabel>
+          <Textarea id="description" placeholder="Brief description of the property" />
+        </FormControl>
         <Text fontSize="md" color={textColor}>
           Please fill in your details to apply for the rental.
         </Text>
