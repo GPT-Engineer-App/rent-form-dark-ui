@@ -1,5 +1,5 @@
 // Real Estate Rental Application Form
-import { Box, Button, Container, FormControl, FormLabel, Input, VStack, Text, useColorModeValue, Heading, Textarea, Image, Link } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, FormControl, FormLabel, Input, VStack, Text, useColorModeValue, Heading, Textarea, Image, Link } from "@chakra-ui/react";
 import { FaPaperPlane } from "react-icons/fa";
 
 const Index = () => {
@@ -33,13 +33,31 @@ const Index = () => {
           <FormLabel htmlFor="description" color={textColor}>
             Description
           </FormLabel>
-          <Image src="https://example.com/property-photo.jpg" alt="Luxurious Beachfront Property" borderRadius="md" />
-          <Text fontSize="md" color={textColor} mt="2">
-            A luxurious beachfront property with 3 bedrooms and 2 bathrooms, perfect for a summer getaway.
-          </Text>
-          <Link href="https://example.com/property-listing" isExternal color="blue.300">
-            View Property Listing
-          </Link>
+          <Flex direction={{ base: "column", md: "row" }} gap="4">
+            <Box flex="1">
+              <Image src="https://example.com/property-photo.jpg" alt="Luxurious Beachfront Property" borderRadius="md" />
+              <Text fontSize="md" color={textColor} mt="2">
+                A luxurious beachfront property with 3 bedrooms and 2 bathrooms, perfect for a summer getaway.
+              </Text>
+              <Link href="https://example.com/property-listing" isExternal color="blue.300">
+                View Property Listing
+              </Link>
+            </Box>
+            <Box flex="1">
+              <Text fontSize="lg" fontWeight="bold" color={textColor} mb="2">
+                Monthly Rent
+              </Text>
+              <Text fontSize="md" color={textColor}>
+                $3,000
+              </Text>
+              <Text fontSize="lg" fontWeight="bold" color={textColor} mt="4" mb="2">
+                Lease Terms
+              </Text>
+              <Text fontSize="md" color={textColor}>
+                12-month lease
+              </Text>
+            </Box>
+          </Flex>
         </FormControl>
         <Text fontSize="md" color={textColor}>
           Please fill in your details to apply for the rental.
