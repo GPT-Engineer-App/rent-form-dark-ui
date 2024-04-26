@@ -14,7 +14,7 @@ const Index = () => {
         </Heading>
         {}
         <FormControl>
-          <FormLabel htmlFor="property-name" color={textColor}>
+          <FormLabel htmlFor="property-name" color={textColor} fontWeight="bold">
             Property Name
           </FormLabel>
           <Text fontSize="md" color={textColor}>
@@ -22,7 +22,7 @@ const Index = () => {
           </Text>
         </FormControl>
         <FormControl>
-          <FormLabel htmlFor="location" color={textColor}>
+          <FormLabel htmlFor="location" color={textColor} fontWeight="bold">
             Location
           </FormLabel>
           <Text fontSize="md" color={textColor}>
@@ -30,7 +30,7 @@ const Index = () => {
           </Text>
         </FormControl>
         <FormControl>
-          <FormLabel htmlFor="description" color={textColor}>
+          <FormLabel htmlFor="description" color={textColor} fontWeight="bold">
             Description
           </FormLabel>
           <Flex direction={{ base: "column", md: "row" }} gap="4">
