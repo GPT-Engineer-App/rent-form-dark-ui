@@ -29,12 +29,28 @@ const Index = () => {
             1234 Beach Ave, Miami, FL
           </Text>
         </FormControl>
-        <FormControl>
-          <FormLabel htmlFor="description" color={textColor} fontWeight="bold">
-            Description
-          </FormLabel>
-          <Flex direction={{ base: "column", md: "row" }} gap="4">
-            <Box flex="1">
+        <Flex direction={{ base: "column", md: "row" }} gap="4">
+          <Box flex="1">
+            <FormControl>
+              <FormLabel htmlFor="property-name" color={textColor} fontWeight="bold">
+                Property Name
+              </FormLabel>
+              <Text fontSize="md" color={textColor}>
+                Sunset Villas
+              </Text>
+            </FormControl>
+            <FormControl>
+              <FormLabel htmlFor="location" color={textColor} fontWeight="bold">
+                Location
+              </FormLabel>
+              <Text fontSize="md" color={textColor}>
+                1234 Beach Ave, Miami, FL
+              </Text>
+            </FormControl>
+            <FormControl>
+              <FormLabel htmlFor="description" color={textColor} fontWeight="bold">
+                Description
+              </FormLabel>
               <Image src="https://example.com/property-photo.jpg" alt="Luxurious Beachfront Property" borderRadius="md" />
               <Text fontSize="md" color={textColor} mt="2">
                 A luxurious beachfront property with 3 bedrooms and 2 bathrooms, perfect for a summer getaway.
@@ -42,23 +58,27 @@ const Index = () => {
               <Link href="https://example.com/property-listing" isExternal color="blue.300">
                 View Property Listing
               </Link>
-            </Box>
-            <Box flex="1">
+            </FormControl>
+          </Box>
+          <Box flex="1">
+            <FormControl>
               <Text fontSize="lg" fontWeight="bold" color={textColor} mb="2">
                 Monthly Rent
               </Text>
               <Text fontSize="md" color={textColor}>
                 $3,000
               </Text>
+            </FormControl>
+            <FormControl>
               <Text fontSize="lg" fontWeight="bold" color={textColor} mt="4" mb="2">
                 Lease Terms
               </Text>
               <Text fontSize="md" color={textColor}>
                 12-month lease
               </Text>
-            </Box>
-          </Flex>
-        </FormControl>
+            </FormControl>
+          </Box>
+        </Flex>
         <Text fontSize="md" color={textColor}>
           Please fill in your details to apply for the rental.
         </Text>
